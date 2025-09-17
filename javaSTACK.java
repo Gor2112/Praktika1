@@ -1,22 +1,22 @@
 import java.util.Stack;
 
-public class SimpleStack {
+public class МойСтек {
     public static void main(String[] args) {
-        // Создаем стек
-        Stack<Integer> stack = new Stack<>();
+        // Стек из книг
+        Stack<String> книги = new Stack<>();
         
-        // Кладем элементы
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        System.out.println("Стек: " + stack);
+        // Кладу книги
+        книги.push("Математика");
+        книги.push("История");
+        книги.push("География");
+        System.out.println("Стек книг: " + книги);
         
-        // Смотрим верхний элемент
-        System.out.println("Верхний: " + stack.peek());
+        // Смотрю верхнюю
+        System.out.println("Верхняя книга: " + книги.peek());
         
-        // Достаем элементы
-        System.out.println("Достали: " + stack.pop());
-        System.out.println("Достали: " + stack.pop());
-        System.out.println("Осталось: " + stack);
+        // Беру книгу
+        String взятая = книги.pop();
+        System.out.println("Взял книгу: " + взятая);
+        System.out.println("Осталось: " + книги);
     }
 }
