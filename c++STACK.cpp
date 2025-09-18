@@ -1,9 +1,14 @@
+#include <iostream>
 #include <stack>
-#include <string>
+using namespace std;
 
-std::stack<std::string> plateStack;
-plateStack.push("x");
-plateStack.push("y");
-plateStack.push("z");
-std::string topPlate = plateStack.top();
-plateStack.pop();
+int main() {
+    stack<string> st;
+    st.push("Hello");
+    st.push("World");
+    st.push("!");
+    cout << st.top() << endl;
+    st.pop();
+    cout << st.top() << endl;
+    return 0;
+}
