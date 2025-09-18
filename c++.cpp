@@ -1,13 +1,15 @@
 #include <iostream>
-#include <vector>
+#include <list>
 using namespace std;
 
-int main() {
-    vector<int> list;
-    list.push_back(1);
-    list.push_back(2);
-    list.push_back(3);
-    list.erase(list.begin() + 1);
-    cout << list[0] << endl;
+int main()
+{
+    list<int> listData;
+
+    listData.push_back(100);
+    listData.push_back(200);
+    listData.push_back(300);
+    listData.push_back(400);
+
     return 0;
 }
