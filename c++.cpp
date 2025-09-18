@@ -1,9 +1,13 @@
+#include <iostream>
 #include <vector>
-#include <string>
+using namespace std;
 
-std::vector<std::string> vec;
-vec.push_back("a");
-vec.push_back("b");
-vec.push_back("c");
-std::string first = vec[0];
-vec.pop_back();
+int main() {
+    vector<int> list;
+    list.push_back(1);
+    list.push_back(2);
+    list.push_back(3);
+    list.erase(list.begin() + 1);
+    cout << list[0] << endl;
+    return 0;
+}
